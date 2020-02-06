@@ -1,38 +1,38 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-// eslint-disable-next-line
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
 import Main from './components/Main';
 import { Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="demo-big-content">
-    <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
+      <div className="demo-big-content" style={{height: '300px', position: 'relative'}}>
+      <Layout>
+        <Header title={<span><span style={{ color: '#ddd' }}></span><strong>The Title</strong></span>}>
+          <Navigation>
+            <Link to="/resume">Resume</Link>
+            <Link to="/about">About Me</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
+          </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
+        <Drawer title="Title">
+          <Navigation>
+            <Link to="/resume">Resume</Link>
+            <Link to="/about">About Me</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
+          </Navigation>
         </Drawer>
         <Content>
             <div className="page-content" />
-            <Main/>
+            <Main />
         </Content>
-    </Layout>
-</div>
-
+      </Layout>
+      </div>
     );
   }
 }
