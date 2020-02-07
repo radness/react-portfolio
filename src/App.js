@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className="demo-big-content" style={{height: '300px', position: 'relative'}}>
+      <div className="demo-big-content" style={{height: '600px', position: 'relative'}}>
       <Layout>
-        <Header title={<span><span style={{ color: '#ddd' }}></span><strong>The Title</strong></span>}>
+        <Header className="header-color" title="Radness" scroll>
           <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/about">About Me</Link>
