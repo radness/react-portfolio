@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Section, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 class Project extends Component {
   constructor(props) {
@@ -98,11 +98,11 @@ class Project extends Component {
           <Tab>MS-SQL</Tab>
         </Tabs>
 
-        <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
+        <Grid className="project-grid">
+          <Cell col={12}>
+            <div className="content">{this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
       </div>
     );
   }
