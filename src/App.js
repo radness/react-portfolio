@@ -19,7 +19,7 @@ class App extends Component {
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Radness">
           <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/about">About Me</Link>
