@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 // import ShoppingList from './ShoppingList';
-import SubTotal from './SubTotal/SubTotal';
-import PickupSaving from './PickupSavings/PickupSaving';
+import SubTotal from './ShoppingCart/SubTotal/SubTotal';
+import PickupSaving from './ShoppingCart/PickupSavings/PickupSaving';
+import TaxesFees from './ShoppingCart/TaxesFees/TaxesFees';
+import EstimatedTotal from './ShoppingCart/EstimatedTotal/EstimatedTotal';
+import ItemDetails from './ShoppingCart/ItemDetails/ItemDetails';
+import PromoCodeDiscount from './ShoppingCart/PromoCode/PromoCode';
 
 class Projects extends Component {
   constructor(props) {
     super(props);
+    
     this.state = {
       activeTab: 0,
       total: 100,
@@ -34,13 +39,21 @@ class Projects extends Component {
           </Card>
           
           {/* Project 2 */}
-          <div class>
-
+          <div className="container">
+            <Grid className="purchase-card">
+              <SubTotal price={this.state.total.toFixed(2)} />
+              <PickupSaving price={this.state.PickupSavings}/>
+              <TaxesFees taxes={this.state.taxes.toFixed(2)} />
+            <hr />
+            <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
+            <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
+            <hr />
+            <PromoCodeDiscount
+              giveDiscount={() => this.giveDiscountHandler()}
+              isDisabled={this.state.disablePromoButton}
+            />
+            </Grid>
           </div>
-          <Grid>
-            <SubTotal price={this.state.total.toFixed(2)} />
-            <PickupSaving price={this.state.PickupSavings}/>
-          </Grid>
           
         </div>
       )
