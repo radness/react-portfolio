@@ -7,18 +7,18 @@ class Contact extends Component {
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
-            <h3>Yeonghoon Shin</h3>
+            <h2>Yeonghoon Shin</h2>
             <img
               src="https://static.turbosquid.com/Preview/2016/01/14__00_54_36/OlafFengmian.jpg7aa4983b-90eb-49ba-92c7-622709e9f502Zoom.jpg"
               alt="avatar"
               style={{ height: '250px' }}
             />
-            <p style={{ width: '75%', margin: 'auto', paddingTop: '1em' }}>
+            <p style={{ fontSize: '26px', width: '75%', margin: 'auto', paddingTop: '1em' }}>
             Hola, soy un desarrollador jugando y comiendo en Corea.
             </p>
           </Cell>
           <Cell col={6}>
-            <h3>Contact Me</h3>
+            <h2>Contact Me</h2>
             <hr/>
             <div className="contact-list">
               <List>

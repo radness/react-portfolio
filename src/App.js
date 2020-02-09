@@ -9,13 +9,13 @@ import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className="demo-big-content" style={{height: '600px', position: 'relative'}}>
+      <div className="demo-big-content" style={{height: '720px', position: 'relative'}}>
       <Layout>
         <Header className="header-color" title="Radness" href="/" scroll>
           <Navigation>
             <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
-            <Link to="/about">About Me</Link>
+            <Link to="/about">About</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
           </Navigation>

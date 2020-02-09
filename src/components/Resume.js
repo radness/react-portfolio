@@ -12,12 +12,13 @@ class Resume extends Component {
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
-                src="img/avatar.png"
+                src="https://cdn.iconscout.com/icon/free/png-512/avatar-367-456319.png"
+                // src="img/avatar.png"
                 alt="Yeonghoon Shin"
                 style={{height: '200px'}}
               />
             </div>
-            <h2 style={{paddingTop: '2em'}}>Yeonghoon Shin</h2>
+            <h2 style={{paddingTop: '1em'}}>Yeonghoon Shin</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <p>Hola, soy un desarrollador jugando y comiendo en Corea.</p>
