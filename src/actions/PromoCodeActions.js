@@ -1,4 +1,4 @@
-import { PROMO_CODE } from './types';
+import { PROMO_CODE } from './Types';
 
 export const handleChange = e => dispatch => {
     dispatch({

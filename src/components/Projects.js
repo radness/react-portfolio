@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-// import ShoppingList from './ShoppingList';
-import SubTotal from './ShoppingCart/SubTotal/SubTotal';
-import PickupSaving from './ShoppingCart/PickupSavings/PickupSaving';
-import TaxesFees from './ShoppingCart/TaxesFees/TaxesFees';
-import EstimatedTotal from './ShoppingCart/EstimatedTotal/EstimatedTotal';
-import ItemDetails from './ShoppingCart/ItemDetails/ItemDetails';
-import PromoCodeDiscount from './ShoppingCart/PromoCode/PromoCode';
+// import SubTotal from './ShoppingCart/SubTotal/SubTotal';
+// import PickupSaving from './ShoppingCart/PickupSavings/PickupSaving';
+// import TaxesFees from './ShoppingCart/TaxesFees/TaxesFees';
+// import EstimatedTotal from './ShoppingCart/EstimatedTotal/EstimatedTotal';
+// import ItemDetails from './ShoppingCart/ItemDetails/ItemDetails';
+import ShoppingList from './ShoppingCart/ShoppingList';
+
 
 class Projects extends Component {
   constructor(props) {
@@ -14,8 +14,6 @@ class Projects extends Component {
     
     this.state = {
       activeTab: 0,
-      total: 100,
-      PickupSavings: -3.65
     };
   }
 
@@ -39,22 +37,7 @@ class Projects extends Component {
           </Card>
           
           {/* Project 2 */}
-          <div className="container">
-            <Grid className="purchase-card">
-              <SubTotal price={this.state.total.toFixed(2)} />
-              <PickupSaving price={this.state.PickupSavings}/>
-              <TaxesFees taxes={this.state.taxes.toFixed(2)} />
-            <hr />
-            <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
-            <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
-            <hr />
-            <PromoCodeDiscount
-              giveDiscount={() => this.giveDiscountHandler()}
-              isDisabled={this.state.disablePromoButton}
-            />
-            </Grid>
-          </div>
-          
+          <ShoppingList></ShoppingList>
         </div>
       )
     } else if(this.state.activeTab === 1) {
