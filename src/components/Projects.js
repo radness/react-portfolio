@@ -7,7 +7,6 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, 
 // import ItemDetails from './ShoppingCart/ItemDetails/ItemDetails';
 import ShoppingList from './ShoppingCart/ShoppingList';
 
-
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -15,6 +14,10 @@ class Projects extends Component {
     this.state = {
       activeTab: 0,
     };
+  }
+
+  onPageMove = () => {
+
   }
 
   toggleCategories() {
@@ -37,12 +40,25 @@ class Projects extends Component {
           </Card>
           
           {/* Project 2 */}
-          <ShoppingList></ShoppingList>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardText>
+              React project description.
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+              <Button colored>CodePen</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
         </div>
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div><h1>This is Javascript</h1></div>
+        // <div><h1>This is Javascript</h1></div>
+        <ShoppingList />
       )
     } else if(this.state.activeTab === 2) {
       return (
@@ -72,7 +88,9 @@ class Projects extends Component {
           ripple
         >
           <Tab>React</Tab>
-          <Tab>Javascript</Tab>
+          <Tab>
+            ShoppingList
+          </Tab>
           <Tab>Java</Tab>
           <Tab>C#</Tab>
           <Tab>Oracle</Tab>
