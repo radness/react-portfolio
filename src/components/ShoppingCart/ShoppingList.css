@@ -1,30 +1,52 @@
 .container {
-    margin-top: 10px;
-  }
-  
-  .purchase-card {
-    width: 350px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1em;
-  }
-  
-  .purchase-card > .show-grid {
-    padding-bottom: 1.5em;
-  }
-  
-  .item-details-button:focus {
-    outline: none;
-  }
-  
-  .promo-code-button:focus {
-    outline: none;
-  }
-  
-  .btn-round {
-    border-radius: 17px;
-  }
-  
-  .price-strike {
-    text-decoration-line: line-through;
-    color: grey;
-  }
+  margin-top: 10px;
+}
+
+.purchase-card {
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+}
+
+.purchase-card > .show-grid {
+  padding-bottom: 1.5em;
+}
+
+.item-details-button:focus {
+  outline: none;
+}
+
+.promo-code-button:focus {
+  outline: none;
+}
+
+.btn-round {
+  border-radius: 17px;
+}
+
+.price-strike {
+  text-decoration-line: line-through;
+  color: grey;
+}
+
+/* ShoppingList css */
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.component--item_card {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0;
+}
+.image--itemcard {
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+  border-right: 1px solid #ddd;
+}
+/* ShoppingList css */
