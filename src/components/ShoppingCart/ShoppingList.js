@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Listpage from "../Listpage";
 import './ShoppingList.css';
-import ItemCard from '../ItemCard';
+import ItemCard from '../Itemcard';
 import { Route } from 'react-router-dom';
 import Header from "../../layout/header";
 import Cart from "../Cart";

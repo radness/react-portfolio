@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ItemCard from "./ItemCard";
+import ItemCard from "./Itemcard";
 
 class Listpage extends Component {
   id = 1;
