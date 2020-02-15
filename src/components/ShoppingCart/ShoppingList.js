@@ -7,8 +7,10 @@ import { Route } from 'react-router-dom';
 import Header from "../../layout/header";
 import Cart from "../Cart";
 
+
 class ShoppingList extends Component {
   // 제일 common한 state값 초기 셋팅
+
   state = {
     loading: false,
     ItemList: [], // 처음 Itemlist는 있는 상태로 기획 []

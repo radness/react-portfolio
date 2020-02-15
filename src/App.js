@@ -18,6 +18,7 @@ class App extends Component {
             <Link to="/about">About</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
+            <Link to="/test">test</Link>
           </Navigation>
         </Header>
         <Drawer title="Radness">
@@ -27,6 +28,7 @@ class App extends Component {
             <Link to="/about">About Me</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
+            <Link to="/test">test</Link>
           </Navigation>
         </Drawer>
         <Content>
